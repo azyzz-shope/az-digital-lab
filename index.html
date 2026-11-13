@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="AZ DIGITAL LAB helps creators and businesses build a stronger digital presence through social media content, design and digital solutions.">
+  <title>AZ DIGITAL LAB | Build. Grow. Succeed.</title>
+  <style>
+    :root{--bg:#080b12;--panel:#101725;--blue:#176bff;--cyan:#00c8ff;--text:#f5f8ff;--muted:#9ba9bf;--line:#223149}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#10234a 0,transparent 36%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid #ffffff12}
+    .brand{font-weight:900;letter-spacing:.08em}.brand b{color:var(--cyan)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.navlinks a:hover{color:white}
+    .lang{border:1px solid var(--line);background:#111a2a;color:white;border-radius:10px;padding:9px 13px;cursor:pointer}
+    .hero{padding:92px 0 75px;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.03;margin:16px 0 22px;letter-spacing:-.045em}.gradient{background:linear-gradient(90deg,#fff 10%,#76caff 55%,#176bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:610px;color:var(--muted);font-size:18px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;font-weight:800;border:1px solid var(--line)}.primary{background:linear-gradient(100deg,var(--blue),#078fda);border:0;box-shadow:0 10px 35px #176bff40}.secondary{background:#ffffff08}
+    .orb{min-height:330px;border:1px solid #1b4a86;border-radius:28px;background:linear-gradient(145deg,#12284b,#0b111d 65%);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 0 70px #176bff20}.orb:before,.orb:after{content:"";position:absolute;border:1px solid #248cff55;border-radius:50%;width:280px;height:280px}.orb:after{width:210px;height:210px}.monogram{font-size:105px;font-weight:1000;letter-spacing:-.12em;text-shadow:0 0 35px #168dff;z-index:1}.monogram span{color:var(--cyan)}
+    section{padding:64px 0}.section-head{max-width:650px;margin-bottom:28px}.section-head h2{font-size:clamp(28px,4vw,42px);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(160deg,#121d2d,#0c121d);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#287dff}.icon{font-size:26px}.card h3{margin:12px 0 6px}.card p{color:var(--muted);font-size:14px;margin:0}
+    .band{background:linear-gradient(100deg,#10254a,#0c1422);border:1px solid #1e477b;border-radius:22px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:20px}.band h2{margin:0 0 5px}.band p{margin:0;color:var(--muted)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:18px;border-left:2px solid var(--blue);background:#ffffff06;border-radius:0 12px 12px 0}.step strong{display:block;margin-bottom:5px}.step span{color:var(--muted);font-size:13px}
+    footer{border-top:1px solid #ffffff12;padding:28px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    [dir=rtl] body{text-align:right}[dir=rtl] .step{border-left:0;border-right:2px solid var(--blue);border-radius:12px 0 0 12px}[dir=rtl] .navlinks{direction:rtl}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:65px 0 45px}.orb{min-height:230px}.grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+    @media(max-width:520px){.grid,.steps{grid-template-columns:1fr}.band{align-items:flex-start;flex-direction:column}.lead{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#">AZ <b>DIGITAL LAB</b></a>
+      <div class="navlinks"><a href="#services" data-en="Services" data-ar="الخدمات">Services</a><a href="#process" data-en="How it works" data-ar="كيف نعمل">How it works</a><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></div>
+      <button class="lang" id="langBtn" type="button">العربية</button>
+    </nav>
+    <main>
+      <header class="hero">
+        <div>
+          <div class="eyebrow" data-en="Digital services • Social media solutions" data-ar="خدمات رقمية • حلول منصات التواصل">Digital services • Social media solutions</div>
+          <h1><span data-en="Build your" data-ar="ابنِ حضورك">Build your</span><br><span class="gradient" data-en="digital presence." data-ar="الرقمي.">digital presence.</span></h1>
+          <p class="lead" data-en="We help creators and businesses present their best online through thoughtful content, clean design and practical digital solutions." data-ar="نساعد صناع المحتوى والأعمال على تقديم أفضل صورة لهم عبر محتوى مدروس وتصميم احترافي وحلول رقمية عملية.">We help creators and businesses present their best online through thoughtful content, clean design and practical digital solutions.</p>
+          <div class="actions"><a class="btn primary" href="#contact" data-en="Explore our services" data-ar="اكتشف خدماتنا">Explore our services</a><a class="btn secondary" href="#process" data-en="How we work" data-ar="كيف نعمل">How we work</a></div>
+        </div>
+        <div class="orb" aria-label="AZ Digital Lab logo artwork"><div class="monogram">A<span>Z</span></div></div>
+      </header>
+      <section id="services">
+        <div class="section-head"><div class="eyebrow" data-en="What we do" data-ar="ماذا نقدم">What we do</div><h2 data-en="Digital services that move you forward." data-ar="خدمات رقمية تساعدك على التقدم.">Digital services that move you forward.</h2><p data-en="Practical support for individuals, creators and growing businesses." data-ar="دعم عملي للأفراد وصناع المحتوى والأعمال الناشئة.">Practical support for individuals, creators and growing businesses.</p></div>
+        <div class="grid">
+          <article class="card"><div class="icon">📱</div><h3>Social Media</h3><p data-en="Account optimization, content planning and profile presentation for Instagram, TikTok and Facebook." data-ar="تحسين الحسابات وتخطيط المحتوى وتنسيق الملفات الشخصية على إنستغرام وتيك توك وفيسبوك.">Account optimization, content planning and profile presentation for Instagram, TikTok and Facebook.</p></article>
+          <article class="card"><div class="icon">🎬</div><h3>Video Editing</h3><p data-en="Short-form edits, captions and visual storytelling for Reels, TikTok and Shorts." data-ar="مونتاج المقاطع القصيرة وإضافة النصوص وصناعة سرد بصري للريلز وتيك توك وشورتس.">Short-form edits, captions and visual storytelling for Reels, TikTok and Shorts.</p></article>
+          <article class="card"><div class="icon">🎨</div><h3>Graphic Design</h3><p data-en="Social posts, stories, thumbnails and promotional graphics that match your brand." data-ar="منشورات وقصص وصور مصغرة وتصاميم ترويجية متناسقة مع هويتك.">Social posts, stories, thumbnails and promotional graphics that match your brand.</p></article>
+          <article class="card"><div class="icon">💠</div><h3>Brand Identity</h3><p data-en="A consistent visual direction, color palette and design system for your project." data-ar="اتجاه بصري متناسق ولوحة ألوان ونظام تصميم خاص بمشروعك.">A consistent visual direction, color palette and design system for your project.</p></article>
+          <article class="card"><div class="icon">📊</div><h3>Content Insights</h3><p data-en="Simple performance reviews and actionable ideas to improve your content." data-ar="مراجعة مبسطة للأداء وأفكار قابلة للتطبيق لتحسين المحتوى.">Simple performance reviews and actionable ideas to improve your content.</p></article>
+          <article class="card"><div class="icon">⚙️</div><h3>Digital Solutions</h3><p data-en="Simple websites, Telegram bots and workflow tools for everyday tasks." data-ar="مواقع بسيطة وبوتات تيليجرام وأدوات لتنظيم المهام اليومية.">Simple websites, Telegram bots and workflow tools for everyday tasks.</p></article>
+        </div>
+      </section>
+      <section id="process">
+        <div class="section-head"><div class="eyebrow" data-en="Our process" data-ar="آلية العمل">Our process</div><h2 data-en="Clear steps. Thoughtful delivery." data-ar="خطوات واضحة وتسليم مدروس.">Clear steps. Thoughtful delivery.</h2></div>
+        <div class="steps">
+          <div class="step"><strong data-en="01 — Discover" data-ar="01 — نفهم احتياجك">01 — Discover</strong><span data-en="Tell us about your goals." data-ar="أخبرنا عن أهدافك.">Tell us about your goals.</span></div>
+          <div class="step"><strong data-en="02 — Plan" data-ar="02 — نخطط">02 — Plan</strong><span data-en="Agree on scope and timeline." data-ar="نتفق على نطاق العمل والمدة.">Agree on scope and timeline.</span></div>
+          <div class="step"><strong data-en="03 — Create" data-ar="03 — ننفذ">03 — Create</strong><span data-en="We build and refine your work." data-ar="ننفذ العمل ونحسّنه.">We build and refine your work.</span></div>
+          <div class="step"><strong data-en="04 — Improve" data-ar="04 — نطوّر">04 — Improve</strong><span data-en="Review results and next steps." data-ar="نراجع النتائج والخطوات التالية.">Review results and next steps.</span></div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="band"><div><h2 data-en="Ready to grow your digital presence?" data-ar="جاهز لتطوير حضورك الرقمي؟">Ready to grow your digital presence?</h2><p data-en="Tell us what you are building. Let's plan the next step." data-ar="أخبرنا عن مشروعك ولنخطط للخطوة التالية.">Tell us what you are building. Let's plan the next step.</p></div><a class="btn primary" href="https://www.tiktok.com/" target="_blank" rel="noopener" data-en="Find us on TikTok" data-ar="تابعنا على تيك توك">Find us on TikTok</a></div>
+        <p style="color:var(--muted);font-size:12px;margin-top:12px" data-en="Before publishing, replace the TikTok button URL with your actual profile and add your verified contact details." data-ar="قبل النشر، استبدل رابط زر تيك توك برابط حسابك الحقيقي وأضف بيانات التواصل المؤكدة.">Before publishing, replace the TikTok button URL with your actual profile and add verified contact details.</p>
+      </section>
+    </main>
+    <footer><span>© <span id="year"></span> AZ DIGITAL LAB. <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></span><span>BUILD. GROW. SUCCEED.</span></footer>
+  </div>
+  <script>
+    const btn=document.getElementById('langBtn');let lang='en';
+    function setLang(next){lang=next;document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.dataset[lang]});btn.textContent=lang==='en'?'العربية':'English'}
+    btn.addEventListener('click',()=>setLang(lang==='en'?'ar':'en'));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
